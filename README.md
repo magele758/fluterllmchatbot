@@ -2,6 +2,7 @@
 
 A Flutter cross-platform application for AI-powered content generation, featuring conversation, image, video, and music generation capabilities.
 
+![demo](demo.png)
 ## Features
 
 - Dialog-based main interface
