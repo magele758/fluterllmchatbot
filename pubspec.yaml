@@ -1,0 +1,63 @@
+name: ai_assistant
+description: A Flutter cross-platform application for AI-powered content generation
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none'
+
+# Version number
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  provider: ^6.0.5          # State management
+  http: ^0.13.5             # HTTP client for API calls
+  shared_preferences: ^2.1.0 # Local storage
+  fluttertoast: ^8.2.1      # Toast notifications
+  image_picker: ^0.8.7+5    # Image selection
+  file_picker: ^5.3.0       # File selection
+  path_provider: ^2.0.15    # File system access
+  flutter_markdown: ^0.6.14 # Markdown rendering
+  url_launcher: ^6.1.11     # URL opening
+  # wechat_sdk: ^0.4.0      # WeChat integration - THIS PACKAGE DOESN'T EXIST
+  flutter_secure_storage: ^8.0.0 # Secure storage for tokens
+  logging: ^1.1.1           # Logging utility
+  flutter_dotenv: ^5.0.2    # Environment configuration
+  flutter_svg: ^2.0.6       # SVG rendering
+  cached_network_image: ^3.2.3 # Image caching
+  dio: ^5.1.2               # HTTP client with more features
+  json_annotation: ^4.8.1   # JSON serialization
+  intl: ^0.18.1             # Internationalization and formatting
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  build_runner: ^2.4.4
+  json_serializable: ^6.7.0
+  mockito: ^5.4.0
+
+# Flutter configuration
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - .env
+
+  # Fonts - commented out temporarily since the font files are missing
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Roboto-Light.ttf
+  #         weight: 300
